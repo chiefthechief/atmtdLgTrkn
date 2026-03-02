@@ -4,7 +4,7 @@ from openpyxl import load_workbook, Workbook
 from openpyxl.worksheet.datavalidation import DataValidation
 
 # --- Configuration ---
-EXCEL_FILE = r"C:\Users\chief-workstation\Downloads\entry.xlsx"
+EXCEL_FILE = r"{file location for excel file}"
 HEADERS = ["Date", "Student/Staff Number", "Issue Reported", "Solution Applied", "State"]
 
 # --- Ensure the directory exists ---
@@ -76,5 +76,6 @@ while True:
         print("\n❌ Could not save the file. Please close the Excel file if it's open and try again.")
         # Optionally, you could ask if they want to retry or exit
         break
+
 
 print("\nExiting. Goodbye!")
