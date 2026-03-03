@@ -4,26 +4,16 @@ from openpyxl import load_workbook, Workbook
 from openpyxl.worksheet.datavalidation import DataValidation
 
 # --- Configuration ---
-EXCEL_FILE = r"C:\Users\chief-workstation\Downloads\entry.xlsx"
+EXCEL_FILE = r"{your file location}"
 HEADERS = ["Date", "Student/Staff Number", "Issue Reported", "Solution Applied", "State"]
 
 # --- Predefined lists (customize these as needed) ---
 COMMON_ISSUES = [
-    "account locked on TDMS",
-    "invalid login details",
-    "extension request approval",
-    "progress report approval",
-    "thesis state update",
-    "thesis writeup failed",
-    "credentials lost"
+    #enter your common issues here
 ]
 
 COMMON_SOLUTIONS = [
-    "unlocked account on thesis portal and asked student to reset password",
-    "unlocked account and asked sent student credentials",
-    "submitted details to supervisor for further action",
-    "unlocked account on thesis portal",
-    "sent credentials to student"
+    # enter your common solutions herer
 ]
 
 # --- Helper function to display a numbered list and get selection ---
@@ -123,3 +113,4 @@ while True:
         break
 
 print("\nExiting. Goodbye!")
+
